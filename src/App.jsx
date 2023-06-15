@@ -7,7 +7,15 @@ function App() {
     const [] = useState({})
 
     const handleFetchJokeClick = () => {
-        console.log('fetch joke clicked.');  
+
+        fetch('https://icanhazdadjoke.com/', {
+              headers: {
+                accept: "application/json"   
+             }
+          })
+          .then(res => res.json())
+          .then(data => console.log(data))
+          .catch(err => console.log(err));
     };
 
     return (
