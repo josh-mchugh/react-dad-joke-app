@@ -4,32 +4,25 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [] = useState({})
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    const handleFetchJokeClick = () => {
+        console.log('fetch joke clicked.');  
+    };
+
+    return (
+        <>
+          <div className="bg-gray-700 h-screen flex items-center">
+            <div className="mx-auto max-w-md text-center mb-24 lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+              <h2 className="text-3xl fond-bold tracking-tight text-white sm:text-4xl">Lets hear some dad joke!</h2>
+              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                <button className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" onClick={() => handleFetchJokeClick()}>Fetch Joke</button>
+              </div>
+            </div>
+          </div>
+        </>
+  );
+
 }
 
 export default App
