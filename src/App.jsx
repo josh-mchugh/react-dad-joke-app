@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function App() {
     const [joke, setJoke] = useState('');
@@ -42,6 +43,10 @@ function App() {
 }
 
 function PunchLine(props) {
+    PunchLine.propTypes = {
+        joke: PropTypes.string
+    };
+
     return (
         <>
           <p className="text-lg text-white">
@@ -52,4 +57,4 @@ function PunchLine(props) {
 
 }
 
-export default App
+export default App;
