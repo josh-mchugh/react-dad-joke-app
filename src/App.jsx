@@ -22,7 +22,7 @@ function App() {
             <div className="mx-auto max-w-xl mb-24">
               <div className="flex flex-col gap-y-6 px-6 py-6 bg-slate-800 text-slate-200 text-center border border-slate-600 rounded-lg shadow">
                 <Header/>
-                <PunchLine joke={joke}/>
+                { !!joke && <PunchLine joke={joke}/> }
                 <Button onClick={handleFetchJoke} hasJoke={!!joke}/>
               </div>
             </div>
