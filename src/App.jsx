@@ -20,10 +20,10 @@ function App() {
         <>
           <div className="bg-slate-900 h-screen flex items-center">
             <div className="mx-auto max-w-xl mb-24">
-              <div className="flex flex-col gap-y-6 px-6 py-6 bg-slate-800 text-center border border-gray-200 rounded-lg shadow">
+              <div className="flex flex-col gap-y-6 px-6 py-6 bg-slate-800 text-slate-200 text-center border border-slate-600 rounded-lg shadow">
 
                 <div>
-                  <h2 className="text-3xl fond-bold tracking-tight text-white sm:text-4xl">
+                  <h2 className="text-3xl fond-bold tracking-tight">
                   Lets hear some dad jokes!
                   </h2>
                 </div>
@@ -62,7 +62,7 @@ function Button(props) {
             <button
               type="button"
               onClick={props.onClick}
-              className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-slate-600 dark:text-slate-200 dark:hover:text-white dark:hover:bg-slate-600 dark:focus:ring-slate-800">
+              className="border focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border-slate-600 hover:text-white hover:bg-slate-600 focus:ring-slate-800">
               Fetch Joke
             </button>
           </div>
