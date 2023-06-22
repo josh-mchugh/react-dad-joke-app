@@ -10,9 +10,14 @@ Example GIF:
 
 ## Running the appplication
 
-Run the application in dev mode
+Run app locally
 ```shell
 npm run dev
+```
+
+Run tests
+```shell
+npm run test
 ```
 
 Create a build
