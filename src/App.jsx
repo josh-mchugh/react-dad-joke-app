@@ -1,17 +1,12 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { fetchDadJoke } from './api.service';
 
 function App() {
     const [joke, setJoke] = useState('');
 
     const handleFetchJoke = () => {
-
-        fetch('https://icanhazdadjoke.com/', {
-              headers: {
-                accept: "application/json"   
-             }
-          })
-          .then(res => res.json())
+        fetchDadJoke()
           .then(data => setJoke(data.joke))
           .catch(err => console.log(err));
     };
