@@ -1,3 +1,5 @@
+![Build Status Badge](https://github.com/josh-mchugh/reactjs-dad-joke-app/actions/workflows/main.yml/badge.svg)
+
 # ReactJS Dad Joke App
 This is a small and simple ReactJS project to incorporate the material which I have read from Fullstack React. It's focus was to create an application that uses components and have props be passed down to the components while having the top component maintain the application state.
 
